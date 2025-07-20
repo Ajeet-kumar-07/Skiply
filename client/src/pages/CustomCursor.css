@@ -1,0 +1,45 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+
+.cursor-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+
+/* 🎯 Apply floating animation ONLY if .active is present */
+.cursor-dot.active {
+  animation: floatDot 4s infinite ease-in-out;
+}
+
+.cursor-dot.clicked {
+  animation: none !important;
+  transform: translate(-50%, -50%) scale(2);
+}
+
+@keyframes floatDot {
+  0%   { transform: translate(-50%, -50%) translate(0px, 0px); }
+  15%  { transform: translate(-50%, -50%) translate(2px, -1px); }
+  30%  { transform: translate(-50%, -50%) translate(1px, 2.5px); }
+  45%  { transform: translate(-50%, -50%) translate(-2px, 1px); }
+  60%  { transform: translate(-50%, -50%) translate(-1px, -2px); }
+  75%  { transform: translate(-50%, -50%) translate(2.5px, 1.5px); }
+  90%  { transform: translate(-50%, -50%) translate(-1.5px, 2px); }
+  100% { transform: translate(-50%, -50%) translate(0px, 0px); }
+}

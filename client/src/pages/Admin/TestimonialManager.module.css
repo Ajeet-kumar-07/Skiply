@@ -1,0 +1,103 @@
+.container {
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .container {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: #3E4E88;
+  margin-bottom: 24px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .heading {
+  color: #90caf9 !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-mode .input {
+  background-color: #2d3748 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode .input::placeholder {
+  color: #b0b0b0 !important;
+}
+
+.button {
+  background-color: #3E4E88;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .button {
+  background-color: #3949ab !important;
+}
+
+.testimonialList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  background: #f4f6fc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .item {
+  background: #2d3748 !important;
+  color: #e0e0e0 !important;
+}
+
+.deleteBtn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .deleteBtn {
+  background-color: #f44336 !important;
+}

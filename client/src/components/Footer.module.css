@@ -1,0 +1,89 @@
+.footer {
+  background-color: #f4f6fc;
+  padding: 40px 20px 20px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1 1 300px;
+}
+
+.col h3 {
+  color: #5C6BC0;
+  margin-bottom: 12px;
+}
+
+.col h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3949AB;
+}
+
+.col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.col ul li {
+  margin-bottom: 8px;
+}
+
+.col ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  color: #5C6BC0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+}
+
+.dark-mode .footer {
+  background-color: #23272b !important;
+  color: #e0e0e0 !important;
+  border-top: 1px solid #333 !important;
+}
+.dark-mode .col h3,
+.dark-mode .col h4 {
+  color: #90caf9 !important;
+}
+.dark-mode .col ul li a,
+.dark-mode .socials a {
+  color: #90caf9 !important;
+}
+.dark-mode .bottom {
+  color: #b0b0b0 !important;
+}

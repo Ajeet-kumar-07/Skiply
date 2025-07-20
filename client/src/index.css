@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F9FC;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: #3E4E88;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7986CB;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+  color: #90caf9 !important;
+}
+
+.dark-mode a {
+  color: #90caf9 !important;
+}
+
+.dark-mode button {
+  background-color: #3949ab !important;
+  color: #fff !important;
+}
+
+.dark-mode button:hover {
+  background-color: #5c6bc0 !important;
+}
+
+/* Global component dark mode styles */
+.dark-mode .card, 
+.dark-mode .container, 
+.dark-mode .table,
+.dark-mode .modal,
+.dark-mode .info,
+.dark-mode .heading,
+.dark-mode .testimonial,
+.dark-mode .notice,
+.dark-mode .featureGrid .card,
+.dark-mode .faq,
+.dark-mode .sidebar,
+.dark-mode .student-main,
+.dark-mode .student-sidebar,
+.dark-mode .dropdownContent {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25) !important;
+}
+
+.dark-mode input, 
+.dark-mode textarea {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode input::placeholder, 
+.dark-mode textarea::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1;
+}
+
+.dark-mode th, 
+.dark-mode td { 
+  background: #23272b !important; 
+  color: #e0e0e0 !important; 
+}
+
+.dark-mode .motionBtn, 
+.dark-mode .btn {
+  background: #3949ab !important;
+  color: #fff !important;
+}
+
+.dark-mode .statusPaid { 
+  color: #4caf50 !important; 
+}
+
+.dark-mode .statusUnpaid { 
+  color: #f44336 !important; 
+}
+
+.dark-mode .student-avatar,
+.dark-mode .avatar-wrapper {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .student-main,
+.dark-mode .student-sidebar {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+
+/* Scrollbar styling for dark mode */
+body.dark-mode ::-webkit-scrollbar {
+  width: 10px;
+  background: #23272b;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 6px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Ensure smooth transitions */
+body, 
+.card, 
+.container, 
+.navbar, 
+.table, 
+input, 
+textarea,
+.footer {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

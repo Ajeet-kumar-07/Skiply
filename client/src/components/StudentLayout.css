@@ -1,0 +1,122 @@
+.student-layout {
+  display: flex;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.student-sidebar {
+  width: 200px;
+  background: #eef2ff;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .student-sidebar {
+  background: #1e1e2f !important;
+  color: #e0e0e0 !important;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2) !important;
+}
+
+.student-avatar {
+  font-size: 32px;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.dark-mode .student-avatar {
+  background: #2d3748 !important;
+  color: #e0e0e0 !important;
+}
+
+.student-avatar:active {
+  box-shadow: 0 0 0 8px #d1d5ff60;
+}
+
+.dark-mode .student-avatar:active {
+  box-shadow: 0 0 0 8px #90caf960 !important;
+}
+
+.quote-slide {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: #ffffffee;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.3s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .quote-slide {
+  background: #2d3748ee !important;
+  color: #e0e0e0 !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.greeting {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .greeting {
+  color: #e0e0e0 !important;
+}
+
+.student-sidebar nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-sidebar nav a {
+  text-decoration: none;
+  color: #3e4e88;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .student-sidebar nav a {
+  color: #90caf9 !important;
+}
+
+.student-main {
+  flex: 1;
+  padding: 40px;
+  background: #f9faff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .student-main {
+  background: #1a1a2b !important;
+  color: #e0e0e0 !important;
+}
