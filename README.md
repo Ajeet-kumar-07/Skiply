@@ -1,4 +1,5 @@
 # Skiply - Student Management System
+[Live](https://skiplyy.onrender.com/)
 
 A comprehensive student management system built with React frontend and Node.js backend, featuring leave management, fee tracking, and admin dashboard.
 
@@ -181,7 +182,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Ajeet Kumar** - *Initial work* - [YourGitHub](https://github.com/Ajeet-kumar-07)
+- **Ajeet Kumar** - *Initial work* - [AjeetKumar](https://github.com/Ajeet-kumar-07)
 
 ## 🙏 Acknowledgments
 
